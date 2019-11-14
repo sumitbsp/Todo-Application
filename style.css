@@ -1,0 +1,154 @@
+* {
+    margin: 5px auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: none; */
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Krub', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #FFF9C4;
+    height: auto;
+    min-height: 93vh;
+    width: 45%;
+    margin: auto;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 2px 0px rgba(158,153,158,1);
+}
+
+h1 {
+    margin: 20px;
+    color: #555555;
+}
+
+.filter-container {
+    margin-bottom: 30px;
+}
+
+.filter-container input[type="text"]{
+    width: 40%;
+    height: 25px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+}
+.filter-container label{
+    width: 2px;
+}
+
+#todos {
+    margin: 50px 25px 10px 25px;
+}
+#todos h2{
+    color: #555555 ;
+    margin-bottom: 20px;
+}
+
+#todos div{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: auto;
+    
+    min-height: 40px;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+    /* text-decoration: ; */
+}
+
+#todos div button{
+    position: absolute;
+    right: 0;
+}
+#todos div input {
+    margin-right: 15px;
+}
+
+#todos div span {
+    display: inline-block;
+    width: 70%;
+    word-break: break-all;
+    text-align: left;
+}
+
+button {
+    width: 70px;
+    height: 20px;
+    border: 1px solid lightgrey;
+    /* background-color: #E0E0E0; */
+    background-color: #555D;
+    color: white;
+    font-size: 0.9rem;
+    /* -webkit-box-shadow: 0px 0px 6px 3px rgba(158,153,158,1); */
+    /* -moz-box-shadow: 0px 0px 6px 3px rgba(158,153,158,1); */
+    box-shadow: 0px 0px 1px px white;
+    transition: 0.1s;
+    border-radius: 3px;
+    font-weight: 600;
+}
+button:hover{
+    background-color: rgba(59, 59, 59, 0.867);
+}
+
+form {
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form input{
+    width: 75%;
+    height: 35px;
+    border: 1px solid lightgrey;
+}
+
+input {
+    background-color: #EEEEEE;
+}
+
+/* media queries */
+
+@media screen and (max-width:1000px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 95%;
+    }
+
+    #todos div span {
+        width: 70%;
+        margin-right: auto;
+    }
+    button {
+        width: 50px;
+    }
+}
